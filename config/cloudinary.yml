@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: farhanmahmoodny
+  api_key: '133198894195724'
+  api_secret: e-xEmtMJz3Yx7-2K_HJnrQJeQ6A
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: farhanmahmoodny
+  api_key: '133198894195724'
+  api_secret: e-xEmtMJz3Yx7-2K_HJnrQJeQ6A
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: farhanmahmoodny
+  api_key: '133198894195724'
+  api_secret: e-xEmtMJz3Yx7-2K_HJnrQJeQ6A
+  enhance_image_tag: true
+  static_file_support: false
