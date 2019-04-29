@@ -12,6 +12,7 @@ class CommentsController < ApplicationController
 
   def create
     @comment = Comment.create(comment: params[:comment], user_id: params[:user_id], photo_id: params[:photo_id])
+    render json: @comment
   end
 
   def destroy
