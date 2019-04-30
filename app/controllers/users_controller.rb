@@ -11,7 +11,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.create(name: params[:name], email: params[:email], username: params[:username], password: params[:password_digest])
+    @user = User.create(name: params[:name], email: params[:email], username: params[:username], password: params[:password])
     if @user.valid?
       render json: @user, status: :created
     else
@@ -21,7 +21,7 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    @user.update(name: params[:name], email: params[:email], username: params[:username])
+    @user.update(name: params[:name], email: params[:email], username: params[:username], password: params[:password])
     render json: @user
   end
 
